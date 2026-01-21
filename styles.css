@@ -235,6 +235,16 @@ a {
     color: var(--color-sage);
 }
 
+.resume-link {
+    color: var(--color-forest);
+    font-weight: 400;
+    transition: color var(--duration) var(--ease);
+}
+
+.resume-link:hover {
+    color: var(--color-sage);
+}
+
 /* Portrait */
 .intro-portrait {
     flex-shrink: 0;
