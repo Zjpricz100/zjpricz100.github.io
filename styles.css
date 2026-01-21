@@ -360,7 +360,7 @@ a {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-lg);
 }
 
@@ -476,6 +476,12 @@ a {
     line-height: 1.5;
 }
 
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
 .project-link {
     font-size: 0.85rem;
     font-weight: 400;
@@ -488,6 +494,29 @@ a {
 
 .project-link:hover {
     gap: 0.5em;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--color-graphite);
+    transition: color var(--duration) var(--ease);
+}
+
+.github-link:hover {
+    color: var(--color-forest);
+}
+
+.github-link svg {
+    flex-shrink: 0;
+    transition: transform var(--duration) var(--ease);
+}
+
+.github-link:hover svg {
+    transform: scale(1.1);
 }
 
 /* ─────────────────────────────────────────────────────────────────
@@ -596,6 +625,12 @@ a {
     
     .intro-description {
         text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
