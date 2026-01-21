@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Pricz — AI/ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">zach pricz</a>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="intro-content">
+            <div class="intro-badge">AI / ML Engineer</div>
+            <h1 class="intro-title">
+                <span class="typing-text">Hi, I'm <span class="title-accent">Zach</span></span>
+            </h1>
+            <p class="intro-description">
+                UC Berkeley EECS graduate with experience in deep learning, computer vision, 
+                and signal processing. I build AI systems that work in the real world.
+            </p>
+            <div class="intro-details">
+                <span class="detail">BS EECS, UC Berkeley '25</span>
+            </div>
+        </div>
+        <div class="intro-portrait">
+            <img src="images/portrait.png" alt="Zachary Pricz" class="portrait-image">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">What I've built</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/lego_spherical.gif" alt="NeRF: Neural Radiance Fields" class="project-cover">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-ochre">Computer Vision</span>
+                            <span class="tag tag-green">3D</span>
+                            <span class="tag tag-sage">PyTorch</span>
+                        </div>
+                        <h3 class="project-title">NeRF: Neural Radiance Fields</h3>
+                        <p class="project-description">
+                            Implemented a NeRF pipeline from scratch including ray sampling, 
+                            volumetric rendering, and camera calibration for 3D scene reconstruction.
+                        </p>
+                        <a href="#" class="project-link">View project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/unet_project_page.png" alt="Diffusion Models & U-Net" class="project-cover">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-green">Diffusion</span>
+                            <span class="tag tag-sage">PyTorch</span>
+                            <span class="tag tag-ochre">Generative AI</span>
+                        </div>
+                        <h3 class="project-title">Diffusion Models & U-Net</h3>
+                        <p class="project-description">
+                            Built a U-Net from scratch for flow matching on MNIST. Used DeepFloyd IF 
+                            from Hugging Face for visual anagrams, hybrid images, and inpainting.
+                        </p>
+                        <a href="#" class="project-link">View project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/poolbot_project_page.png" alt="Poolbot" class="project-cover">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-sage">Robotics</span>
+                            <span class="tag tag-ochre">OpenCV</span>
+                            <span class="tag tag-green">ROS</span>
+                        </div>
+                        <h3 class="project-title">Poolbot</h3>
+                        <p class="project-description">
+                            Led motion control development for a Sawyer robot that plays pool, 
+                            including vision-based ball detection and trajectory planning.
+                        </p>
+                        <a href="#" class="project-link">View project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/instrumental_goal_project_page.png" alt="Instrumental Goal Interpretability" class="project-cover">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-green">LLMs</span>
+                            <span class="tag tag-sage">Interpretability</span>
+                            <span class="tag tag-ochre">NLP</span>
+                        </div>
+                        <h3 class="project-title">Instrumental Goal Interpretability</h3>
+                        <p class="project-description">
+                            Explored mechanistic interpretability in LLaMA 3.1 using linear probes 
+                            and activation steering to study goal-directed behavior in language models.
+                        </p>
+                        <a href="#" class="project-link">View project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image project-image-circle">
+                        <img src="images/pintos_project_page.png" alt="PintOS" class="project-cover">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag tag-sage">Operating Systems</span>
+                            <span class="tag tag-green">C</span>
+                            <span class="tag tag-ochre">Systems</span>
+                        </div>
+                        <h3 class="project-title">PintOS</h3>
+                        <p class="project-description">
+                            An instructional operating system implementing multithreading, synchronization, 
+                            user programs with system calls, and a file system supporting concurrency.
+                        </p>
+                        <a href="#" class="project-link">View project →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="contact-content">
+                <span class="section-label">Contact</span>
+                <h2 class="contact-title">Get in touch</h2>
+                <p class="contact-description">
+                    Open to full-time opportunities in ML/AI engineering. Feel free to reach out.
+                </p>
+                
+                <a href="mailto:hello@example.com" class="contact-email">
+                    hello@example.com
+                    <span class="email-arrow">→</span>
+                </a>
+                
+                <div class="contact-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <p class="footer-text">© 2026 Zachary Pricz</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
